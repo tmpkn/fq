@@ -1,0 +1,22 @@
+name: "functional-quantum-gates"
+version: 0.1
+author: "Tom Pawelek"
+maintainer: "tomaszp2@illinois.edu"
+
+dependencies:
+- base
+- containers
+
+tests:
+  spec:
+    main: Spec.hs
+    source-dirs:
+      - test
+    dependencies:
+      - base
+      - HUnit
+      - functional-quantum-gates
+
+library:
+  source-dirs:
+    - src
